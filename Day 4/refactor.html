@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header,
+      .navigation-menu,
+      .right-content,
+      .left-content,
+      .main-content,
+      .footer {
+        border: 2px solid black;
+      }
+
+      .header {
+        background-color: yellow;
+      }
+
+      .text-color {
+        color: white;
+      }
+
+      .header h1 {
+        text-align: center;
+        color: green;
+      }
+
+      .navigation-menu {
+        margin: 10px auto;
+        background-color: blue;
+      }
+
+      .navigation-menu h1 {
+        text-align: center;
+      }
+
+      .content-wrapper {
+        display: flex;
+        height: 400px;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .left-content {
+        background-color: red;
+        width: 20%;
+        height: 400px;
+        align-items: center;
+      }
+
+      .left-content h1 {
+        text-align: center;
+      }
+
+      .right-content {
+        background-color: red;
+        width: 20%;
+        height: 400px;
+      }
+
+      .right-content h1 {
+        display: inline-block;
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: red;
+        width: 60%;
+        height: 400px;
+        margin: auto 10px;
+      }
+
+      .main-content h1 {
+        text-align: center;
+      }
+
+      .footer {
+        background-color: purple;
+      }
+
+      .footer h1 {
+        text-align: center;
+      }
+
+      .left-content,
+      .right-content,
+      .main-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <h1>Header</h1>
+    </div>
+
+    <!-- navigation menu -->
+    <div class="navigation-menu">
+      <h1 class="text-color">Navigation menu</h1>
+    </div>
+
+    <div class="content-wrapper">
+      <!-- content -->
+      <div class="left-content">
+        <h1 class="text-color">Content</h1>
+      </div>
+      <div class="main-content">
+        <h1 class="text-color">Main Content</h1>
+      </div>
+      <div class="right-content">
+        <h1 class="text-color">Content</h1>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <h1 class="text-color">Footer</h1>
+    </div>
+  </body>
+</html>

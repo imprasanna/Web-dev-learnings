@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.circle-wrapper {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: relative;
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.circle1 {
+    background-color: red;
+    animation: main-ball 1.45s ease-in;
+    z-index: 10;
+}
+
+.circle2 {
+    background-color: rgba(255, 0, 0, 0.8);
+    animation: faded-ball 1.5s ease-in;
+    z-index: 0;
+}
+
+.circle3 {
+    background-color: rgba(255, 0, 0, 0.6);
+    animation: more-faded-ball 1.55s ease-in;
+    z-index: -5;
+}
+
+
+/* animating the ball using cubical function: y = ax^3
+    where, a = 0.0001 and the different values of x are listed below
+*/
+
+/* 20px -> 0.8px
+    40px -> 6.4px
+    60px -> 21.6px
+    80px -> 51.2px
+    100px -> 100px
+    120px -> 172.8px
+    140px -> 274.4px
+    160px -> 409.6px
+    180px -> 583.2px
+    200px -> 200px     
+*/
+
+
+@keyframes main-ball {
+    from {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(20px, 0.8px);
+    }
+
+    20% {
+        transform: translate(40px, 6.4px);
+    }
+
+    30% {
+        transform: translate(60px, 21.6px);
+    }
+
+    40% {
+        transform: translate(80px, 51.2px);
+    }
+
+    50% {
+        transform: translate(100px, 100px);
+    }
+
+    60% {
+        transform: translate(120px, 172.8px);
+    }
+
+    70% {
+        transform: translate(140px, 274.4px);
+    }
+
+    80% {
+        transform: translate(160px, 409.6px);
+    }
+
+    90% {
+        transform: translate(180px, 583.2px);
+    }
+
+    to {
+        transform: translate(200px, 800px);
+    }
+}
+
+@keyframes faded-ball {
+    from {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(20px, 0.8px);
+    }
+
+    20% {
+        transform: translate(40px, 6.4px);
+    }
+
+    30% {
+        transform: translate(60px, 21.6px);
+    }
+
+    40% {
+        transform: translate(80px, 51.2px);
+    }
+
+    50% {
+        transform: translate(100px, 100px);
+    }
+
+    60% {
+        transform: translate(120px, 172.8px);
+    }
+
+    70% {
+        transform: translate(140px, 274.4px);
+    }
+
+    80% {
+        transform: translate(160px, 409.6px);
+    }
+
+    90% {
+        transform: translate(180px, 583.2px);
+    }
+
+    to {
+        transform: translate(200px, 800px);
+    }
+}
+
+@keyframes more-faded-ball {
+    from {
+        transform: translate(0, 0);
+    }
+
+    10% {
+        transform: translate(20px, 0.8px);
+    }
+
+    20% {
+        transform: translate(40px, 6.4px);
+    }
+
+    30% {
+        transform: translate(60px, 21.6px);
+    }
+
+    40% {
+        transform: translate(80px, 51.2px);
+    }
+
+    50% {
+        transform: translate(100px, 100px);
+    }
+
+    60% {
+        transform: translate(120px, 172.8px);
+    }
+
+    70% {
+        transform: translate(140px, 274.4px);
+    }
+
+    80% {
+        transform: translate(160px, 409.6px);
+    }
+
+    90% {
+        transform: translate(180px, 583.2px);
+    }
+
+    to {
+        transform: translate(200px, 800px);
+    }
+}

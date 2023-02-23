@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Single table -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prasanna</td>
+          <td>Acharya</td>
+        </tr>
+        <tr>
+          <td>Aashutosh</td>
+          <td>Acharya</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="2">Full Name</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prasanna</td>
+          <td>Acharya</td>
+          <td>Ktm</td>
+        </tr>
+        <tr>
+          <td>Aashutosh</td>
+          <td>Acharya</td>
+          <td>Sunsari</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="2">A</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>C</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Prasanna</td>
+          <td>Acharya</td>
+        </tr>
+        <tr>
+          <td>Aashutosh</td>
+          <td>Acharya</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+
+    <!-- Homework (nested HTML table)-->
+    <table border="1">
+      <thead>
+        <tr>
+          <th rowspan="2" colspan="8">HTML Table</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="6" colspan="2">Cell 1</td>
+          <td style="text-align: center">
+            Cell 2
+
+            <table border="1">
+              <thead>
+                <tr>
+                  <th colspan="4">Nested HTML table</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="2">Cell 2.1</td>
+                  <td colspan="2">Cell 2.2</td>
+                </tr>
+                <tr>
+                  <td colspan="2">Cell 2.3</td>
+                  <td colspan="2">Cell 2.4</td>
+                </tr>
+              </tbody>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+    <!-- Homework 2 -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan="6">Hello World!</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">Python</td>
+          <td colspan="2">Ruby</td>
+          <td colspan="2">Java</td>
+        </tr>
+        <tr>
+          <td colspan="4" rowspan="2">JavaScript</td>
+          <td>C and C++</td>
+        </tr>
+        <tr>
+          <td>Pearl</td>
+        </tr>
+        <tr>
+          <td colspan="2">Rust</td>
+          <td colspan="2">Golang</td>
+          <td colspan="2">PHP</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br />
+    <br />
+    <!-- form -->
+    <fieldset>
+      <legend>Personal Details</legend>
+      <form action="thankyou.html" method="get">
+        <label>City:</label>
+        <select>
+          <option value="">Select city</option>
+          <option value="ktm">Kathmandu</option>
+          <option value="bkt">Bhaktapur</option>
+          <option value="pkr">Pokhara</option>
+        </select>
+
+        <br />
+        <br />
+
+        <label>First Name:</label>
+        <input
+          required
+          type="text"
+          value="Prasanna"
+          placeholder="Enter your first name"
+        />
+
+        <br />
+        <br />
+
+        <label>Last Name:</label>
+        <input
+          required
+          type="text"
+          value="Acharya"
+          placeholder="Enter your last name"
+        />
+
+        <br />
+        <br />
+
+        <label>Gender:</label>
+        <input name="gender" type="radio" id="male" />
+        <label for="male">Male</label>
+        <input name="gender" type="radio" id="female" />
+        <label for="female">Female</label>
+
+        <br />
+        <br />
+
+        <label>Email:</label>
+        <input
+          required
+          type="email"
+          value=""
+          name="email"
+          placeholder="Enter your email"
+        />
+
+        <br />
+        <br />
+
+        <label>Date of birth:</label>
+        <input type="date" name="dob" />
+
+        <br />
+        <br />
+
+        <label>Address:</label>
+        <br />
+        <!-- <textarea></textarea> -->
+        <textarea name="address" cols="30" rows="10"></textarea>
+
+        <br />
+        <br />
+
+        <button>Submit</button>
+      </form>
+    </fieldset>
+  </body>
+</html>

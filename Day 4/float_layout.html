@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        border: 2px solid black;
+        background-color: yellow;
+      }
+
+      .header h1 {
+        text-align: center;
+        color: green;
+      }
+
+      .navigation-menu {
+        border: 2px solid black;
+        margin: 1% auto;
+        background-color: blue;
+      }
+
+      .navigation-menu h1 {
+        text-align: center;
+        color: white;
+      }
+
+      .left-content {
+        border: 2px solid black;
+        background-color: red;
+        width: 19%;
+        height: 500px;
+        float: left;
+        position: relative;
+      }
+
+      .left-content h1 {
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+      }
+
+      .right-content {
+        border: 2px solid black;
+        background-color: red;
+        width: 19%;
+        height: 500px;
+        float: right;
+        position: relative;
+      }
+
+      .right-content h1 {
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+      }
+
+      .main-content {
+        border: 2px solid black;
+        background-color: aqua;
+        width: 59%;
+        height: 500px;
+        margin: auto 1% 1% 1%;
+        float: left;
+        position: relative;
+      }
+
+      .main-content h1 {
+        color: green;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+      }
+
+      .footer {
+        width: 100%;
+        border: 2px solid black;
+        background-color: purple;
+        clear: both;
+      }
+
+      .footer h1 {
+        color: white;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="header">
+      <h1>Header</h1>
+    </div>
+
+    <!-- navigation menu -->
+    <div class="navigation-menu">
+      <h1>Navigation menu</h1>
+    </div>
+
+    <!-- content -->
+    <div class="left-content">
+      <h1>Content</h1>
+    </div>
+    <div class="main-content">
+      <h1>Main Content</h1>
+    </div>
+    <div class="right-content">
+      <h1>Content</h1>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+      <h1>Footer</h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+@media screen and (max-width: 375px) {
+    h1 {
+        color: red;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 575px) {
+    h1 {
+        color: blue;
+        font-size: 1rem;
+    }
+}
+
+@media print {
+    h1 {
+        color: green;
+    }
+}
+
+/* new way of defining media query*/
+@media screen and (120px <=width <=200px) {
+    h1 {
+        color: red;
+        font-size: 1rem;
+    }
+}

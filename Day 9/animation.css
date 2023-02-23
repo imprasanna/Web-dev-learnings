@@ -1,0 +1,30 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: change-bg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes change-bg {
+    from {
+        background-color: red;
+    }
+
+    20% {
+        background-color: blue;
+    }
+
+    60% {
+        background-color: yellow;
+    }
+
+    80% {
+        background-color: orange;
+    }
+
+    to {
+        background-color: green;
+    }
+}

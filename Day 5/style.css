@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header {
+    border: 2px solid black;
+    background-color: yellow;
+  }
+
+  .header h1 {
+    text-align: center;
+    color: green;
+  }
+
+  .navigation-menu {
+    border: 2px solid black;
+    margin: 10px auto;
+    background-color: blue;
+  }
+
+  .navigation-menu h1 {
+    text-align: center;
+    color: white;
+  }
+
+  .content-wrapper {
+    display: flex;
+    height: 400px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .left-content {
+    border: 2px solid black;
+    background-color: red;
+    width: 20%;
+    height: 400px;
+    align-items: center;
+  }
+
+  .left-content h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .right-content {
+    border: 2px solid black;
+    background-color: red;
+    width: 20%;
+    height: 400px;
+  }
+
+  .right-content h1 {
+    display: inline-block;
+    color: white;
+    text-align: center;
+  }
+
+  .main-content {
+    border: 2px solid black;
+    background-color: red;
+    width: 60%;
+    height: 400px;
+    margin: auto 10px;
+  }
+
+  .main-content h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .footer {
+    border: 2px solid black;
+    background-color: purple;
+    margin-top: 10px;
+  }
+
+  .footer h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .left-content,
+  .right-content,
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
