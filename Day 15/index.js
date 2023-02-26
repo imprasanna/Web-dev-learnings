@@ -86,3 +86,11 @@ console.log(
   person.address,
   person.getDetails()
 );
+
+// Closure
+function fullName() {
+  const hello = "Prasanna";
+  function name() {
+    console.log(hello);
+  }
+}
