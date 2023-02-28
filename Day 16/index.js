@@ -31,7 +31,7 @@ const arr3 = [
   {
     id: 1,
     name: "Rahul",
-    age: 45,
+    age: 50,
   },
 ];
 
@@ -44,7 +44,7 @@ const arr4 = arr3.map((element, index) => {
   };
 });
 
-console.log(arr4);
+console.log("arr4 = " + arr4);
 
 const arr5 = [];
 arr3.forEach((element, index) => {
@@ -76,7 +76,7 @@ const arr7 = [
   {
     id: 1,
     name: "Rahul",
-    age: 45,
+    age: 50,
   },
 ];
 
