@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <style>
+      #wrong-text {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Login Page</h1>
+    <p>Enter username:</p>
+    <input type="text" id="username" placeholder="Your username here..." />
+    <br />
+    <br />
+
+    <p>Enter password:</p>
+    <input type="password" id="password" placeholder="Your password here..." />
+    <p id="wrong-text"></p>
+    <br />
+    <button id="btn">Login</button>
+    <script>
+      const username = document.getElementById("username");
+      const password = document.getElementById("password");
+      const btn = document.getElementById("btn");
+      const wrongText = document.getElementById("wrong-text");
+
+      btn.addEventListener("click", redirect);
+
+      function redirect() {
+        if (username.value == "admin" && password.value == "admin") {
+          window.location.href = "success.html";
+        } else if (username.value == "" || username.value == "") {
+          wrongText.innerHTML = "You cannot leave the field empty!";
+        } else {
+          wrongText.innerHTML = "Wrong username or password!";
+          username.value = "";
+          password.value = "";
+        }
+      }
+    </script>
+  </body>
+</html>
