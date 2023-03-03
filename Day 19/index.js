@@ -20,6 +20,10 @@ const errors = document.querySelectorAll(".error");
 const cityValueError = document.getElementById("cityVal");
 const firstNameValueError = document.getElementById("firstNameVal");
 const lastNameValueError = document.getElementById("lastNameVal");
+const genderValueError = document.getElementById("genderVal");
+const emailValueError = document.getElementById("emailVal");
+const dobValueError = document.getElementById("dobVal");
+const addressValueError = document.getElementById("addressVal");
 
 const form = document.getElementById("myForm");
 form.addEventListener("submit", function (event) {
@@ -28,9 +32,12 @@ form.addEventListener("submit", function (event) {
     cityValueError.innerHTML = "Please select city!";
     return;
   } else if (!firstName.value) {
-    firstNameValue.innerHTML = "Please enter your firstname";
+    firstNameValueError.innerHTML = "Please enter your firstname";
     return;
-  }
+  } else if (!lastName.value) {
+    lastNameValueError.innerHTML = "Please enter your lastname";
+    return;
+  } else if (!)
   errors.forEach((element) => {
     element.innerHTML = "";
   });
