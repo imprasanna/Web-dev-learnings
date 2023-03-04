@@ -1,6 +1,13 @@
 let list = document.getElementById("list");
 const taskInput = document.getElementById("taskInput");
 
+// Add task on pressing key "Enter"
+taskInput.addEventListener("keydown", function (ev) {
+  if (ev.key == "Enter") {
+    addTask();
+  }
+});
+
 function addTask() {
   const listItem = document.createElement("li");
   const textTag = document.createElement("p");

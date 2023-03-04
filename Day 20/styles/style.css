@@ -73,4 +73,7 @@ body {
   padding: 0.5rem 2rem;
   border-radius: 5px;
   cursor: pointer;
+}
+.main-wrapper .to-do-wrapper__list button:hover {
+  background-color: #bdbd07;
 }/*# sourceMappingURL=style.css.map */
