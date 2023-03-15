@@ -8,6 +8,8 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
+import "../App.css";
+
 const Post = () => {
   const [todo, setTodo] = useState({});
   const [loading, setLoading] = useState(false);
@@ -25,7 +27,7 @@ const Post = () => {
         console.log(error);
         setLoading(false);
       });
-  }, []);
+  }, [postId]);
 
   return (
     <div>
@@ -34,7 +36,11 @@ const Post = () => {
           <CircularProgress />
         </Box>
       ) : (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card
+          sx={{
+            maxWidth: 345,
+          }}
+        >
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {todo.id}
