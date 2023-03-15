@@ -1,25 +1,22 @@
-import React, { useEffect, useState } from "react";
-// import Header from "./components/Header";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
-const App = () => {
-  const [counter, setCounter] = useState(0);
-  const [name, setName] = useState("Ram");
-  useEffect(() => {
-    if (counter > 0) {
-      setName("Shyam");
-    }
-    // ComponentWillMount()
-    console.log("Rendered!");
-  }, [counter]); //(dependencies array)
+import "./App.css";
+import NoMatch from "./pages/NoMatch";
+import Post from "./pages/Post";
+import Home from "./pages/Home";
+
+export default function App() {
   return (
-    <div>
-      <h1>Counter value: {counter}</h1>
-      <p>{name}</p>
-      <button onClick={() => setCounter((prevState) => prevState + 1)}>
-        Increase
-      </button>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/posts/:postId" element={<Post />} />
+          <Route path="*" element={<NoMatch />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
-};
-
-export default App;
+}
