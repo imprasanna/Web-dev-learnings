@@ -72,9 +72,11 @@ app.get("/api/todos", (req, res) => {
 app.get("/api/todos/:todoId", (req, res) => {
   const todoId = req.params.todoId;
 
-  const findTodo = Todo.find({ _id: todoId });
+  const findTodo = Todo.findOne({ _id: todoId });
 
-  find.then((response) => res.send(response)).catch((error) => res.send(error));
+  findTodo
+    .then((response) => res.send(response))
+    .catch((error) => res.send(error));
 });
 
 // delete single todo (delete)
