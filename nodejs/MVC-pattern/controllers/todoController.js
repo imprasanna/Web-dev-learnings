@@ -1,3 +1,5 @@
+const { Todo } = require("../models/todo");
+
 const createTodo = (req, res) => {
   console.log("REQUEST", req.body, req.params, req.query);
   const todo = new Todo({
@@ -22,9 +24,11 @@ const getTodos = (req, res) => {
 const getTodo = (req, res) => {
   const todoId = req.params.todoId;
 
-  const findTodo = Todo.find({ _id: todoId });
+  const findTodo = Todo.findOne({ _id: todoId });
 
-  find.then((response) => res.send(response)).catch((error) => res.send(error));
+  findTodo
+    .then((response) => res.send(response))
+    .catch((error) => res.send(error));
 };
 
 const deleteTodo = (req, res) => {
@@ -54,4 +58,12 @@ const updateTodo = (req, res) => {
   updateTodo
     .then((response) => res.send(response))
     .catch((error) => res.send(error));
+};
+
+module.exports = {
+  createTodo,
+  getTodos,
+  getTodo,
+  deleteTodo,
+  updateTodo,
 };

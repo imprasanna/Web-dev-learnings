@@ -1,3 +1,11 @@
+const {
+  getTodos,
+  getTodo,
+  updateTodo,
+  deleteTodo,
+  createTodo,
+} = require("../controllers/todoController");
+
 const todoRoutes = (app) => {
   // create single todo
   app.post("/api/todos", createTodo);
@@ -10,7 +18,9 @@ const todoRoutes = (app) => {
 
   // delete single todo (delete)
   app.delete("/api/todos/:todoId", deleteTodo);
+
+  // put single todo (update)
+  app.put("/api/todos/:todoId", updateTodo);
 };
 
-// put single todo (update)
-app.put("/api/todos/:todoId", updateTodo);
+module.exports = { todoRoutes };
